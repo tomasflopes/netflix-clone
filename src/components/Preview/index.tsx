@@ -21,8 +21,12 @@ const Preview: React.FC = () => {
   return (
     <Container>
       <InformationContainer>
-        <Title>Cenas</Title>
-        <Description>A stuffz is doing stufz in the housez</Description>
+        <Title>lorem ipsum</Title>
+        <Description>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus odio a cum laborum minima quas eaque laudantium
+          expedita recusandae cupiditate?
+        </Description>
       </InformationContainer>
 
       <Buttons>

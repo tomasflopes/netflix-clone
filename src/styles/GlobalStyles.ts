@@ -32,5 +32,10 @@ export default createGlobalStyle`
     --white: #fff;
     --content: #aaa;
     --netflix: #E50914;
+    --light-container: rgba(51,51,51,.1);
+    --light-border: #BAB9B8;
+    --light-button: rgba(109, 109, 110, 0.4);
+    --light-button-hover: rgba(109, 109, 110, 0.7);
+    --dark-text: #000;
   }
 `;
