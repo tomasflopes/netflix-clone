@@ -1,17 +1,16 @@
 import React from 'react';
 
-import { Container, Wrapper } from './styles';
+import { Container } from './styles';
 
 import TopBar from '../TopBar';
+import Preview from '../Preview';
 
 const Layout: React.FC = () => {
   return (
     <Container>
-      <Wrapper>
-        <TopBar />
-        {/* <Preview />
-        <Films /> */}
-      </Wrapper>
+      <TopBar />
+      <Preview />
+      {/* <Films /> */}
     </Container>
   );
 };

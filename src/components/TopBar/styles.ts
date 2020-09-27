@@ -5,7 +5,9 @@ import { SearchOutline, Bell, CaretDown, Gift } from '../../styles/Icons';
 export const Container = styled.div`
   display: flex;
 
-  height: 49px;
+  padding: 0 4%;
+
+  height: 68px;
 
   width: 100%;
 
@@ -17,9 +19,12 @@ export const NetflixLogo = styled.h1`
   color: var(--netflix);
 
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 28px;
 
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
+  line-height: 50px;
+
+  cursor: pointer;
 `;
 
 export const SearchContainer = styled.div`
@@ -63,7 +68,7 @@ export const SearchRow = styled.div`
 `;
 
 export const SearchRowItem = styled.span`
-  font-size: 12px;
+  font-size: 13px;
 
   &.active {
     font-weight: bold;
@@ -78,8 +83,8 @@ export const ProfileContainer = styled.div`
 `;
 
 const iconCSS = css`
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
 
   flex-shrink: 0;
 `;
