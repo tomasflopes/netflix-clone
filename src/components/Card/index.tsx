@@ -1,9 +1,13 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { Container, Title } from './styles';
 
 const Card: React.FC = () => {
-  return <div />;
+  return (
+    <Container>
+      <Title>Title</Title>
+    </Container>
+  );
 };
 
 export default Card;

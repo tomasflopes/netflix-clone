@@ -7,9 +7,9 @@ import Row from '../Row';
 const Rows: React.FC = () => {
   return (
     <Container>
-      <Row />
-      <Row />
-      <Row />
+      <Row title='My list' />
+      <Row title='Popular on Netflix' />
+      <Row title='Trends' />
     </Container>
   );
 };

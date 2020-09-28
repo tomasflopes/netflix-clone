@@ -8,4 +8,6 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 4%;
+
+  overflow: hidden;
 `;

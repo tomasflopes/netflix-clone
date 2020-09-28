@@ -1,18 +1,25 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Cards, Title } from './styles';
 
 import Card from '../Card';
 
-const Row: React.FC = () => {
+interface Props {
+  title: string;
+}
+
+const Row: React.FC<Props> = ({ title }) => {
   return (
     <Container>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <Title>{title}</Title>
+      <Cards>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </Cards>
     </Container>
   );
 };
