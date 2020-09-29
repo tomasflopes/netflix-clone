@@ -29,6 +29,7 @@ export default createGlobalStyle`
 
   :root {
     --primary: #141414;
+    --secondary: #181818;
     --white: #fff;
     --content: #aaa;
     --netflix: #E50914;
