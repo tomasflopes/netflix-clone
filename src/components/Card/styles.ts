@@ -25,16 +25,17 @@ export const Container = styled.div`
 
   &:hover {
     z-index: 2;
-    transform: scale(1.5);
+    transform: scale(1.4);
 
     > div {
       transform: translateY(0%);
+      transform: scale(1);
 
       display: flex;
     }
 
     > h1 {
-      transform: translateY(-30px);
+      transform: translateY(-40px);
     }
   }
 `;
@@ -65,6 +66,8 @@ export const HoverEffect = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  align-items: stretch;
 `;
 
 export const Buttons = styled.div`
@@ -72,6 +75,8 @@ export const Buttons = styled.div`
 
   align-items: center;
   justify-content: flex-start;
+
+  padding: 10px 5px 5px 8px;
 `;
 
 export const Button = styled.div`
@@ -79,21 +84,39 @@ export const Button = styled.div`
 
   align-items: center;
   justify-content: center;
-
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 
   flex-shrink: 0;
-  border: 2px solid var(--light-border);
+  border: 2px solid var(--lighter-border);
 
   padding: 5px;
 
   border-radius: 50%;
+
+  margin-right: 3px;
+
+  &:nth-child(5) {
+    position: absolute;
+    right: 0;
+  }
+
+  transition: background 0.2s ease-out;
+  transition: border 0.3s ease-in;
+
+  &:hover {
+    background: var(--white);
+    border: 2px solid var(--white);
+
+    > svg {
+      fill: var(--primary);
+    }
+  }
 `;
 
 const iconCSS = css`
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 
   flex-shrink: 0;
 `;
@@ -108,22 +131,74 @@ export const AddToListIcon = styled(Check)`
 
 export const LikeIcon = styled(Like)`
   ${iconCSS}
+  width: 15px;
+  height: 15px;
 `;
 
 export const DislikeIcon = styled(Dislike)`
   ${iconCSS}
+  width: 15px;
+  height: 15px;
 `;
 
-export const MoreArrow = styled.div``;
+export const MoreArrow = styled(CaretDown)`
+  ${iconCSS}
+`;
 
-export const CardInfo = styled.div``;
+export const CardInfo = styled.div`
+  display: flex;
 
-export const Relevance = styled.div``;
+  align-items: center;
 
-export const Age = styled.div``;
+  margin-left: 10px;
+  margin-bottom: 5px;
+`;
 
-export const Seasons = styled.div``;
+export const Relevance = styled.span`
+  font-size: 12px;
 
-export const CardCategory = styled.div``;
+  color: var(--highlighted-text);
+  font-weight: bold;
 
-export const Dot = styled.div``;
+  margin-right: 5px;
+`;
+
+export const Age = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  padding: 1px 2px;
+
+  border: 1px solid var(--lighter-border);
+
+  margin-right: 5px;
+`;
+
+export const Seasons = styled.span`
+  font-size: 12px;
+`;
+
+export const CardCategory = styled.div`
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10px;
+
+  > span {
+    font-size: 12px;
+  }
+
+  > span + div {
+    margin: 0 5px;
+  }
+`;
+
+export const Dot = styled.div`
+  width: 3px;
+  height: 3px;
+
+  background: var(--dot);
+`;

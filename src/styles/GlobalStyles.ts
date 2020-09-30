@@ -35,8 +35,11 @@ export default createGlobalStyle`
     --netflix: #E50914;
     --light-container: rgba(51,51,51,.1);
     --light-border: #BAB9B8;
+    --lighter-border: #565656;
+    --dot: #646464;
     --light-button: rgba(109, 109, 110, 0.4);
     --light-button-hover: rgba(109, 109, 110, 0.7);
     --dark-text: #000;
+    --highlighted-text: #46D369;
   }
 `;
